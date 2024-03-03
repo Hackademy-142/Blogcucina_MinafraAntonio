@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- link css -->
+  <link rel="stylesheet" href="style.css">
+  <!-- link google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  <!-- link pagine -->
+  <link rel="" href="ricetta_brasciole.html">
+  <link rel="stylesheet" href="ricetta_prc.html">
+  <link rel="stylesheet" href="ricettta_rape.html">
+  <!-- link bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body class="body_color">
+
+  <!-- navbar -->
+  <nav class="navbar sticky-top mb-0 navbar-expand-lg shadow-sm bg-dark" aria-label="Eighth navbar example">
+    <div class="container">
+      <a class="navbar-brand">
+        <img src="./assets/icons8-blog-64.png" class="" alt="">
+      </a>
+      <button class="navbar-toggler text-white fs-5 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false" aria-label="Toggle navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+        </svg>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample07">
+        <ul class="navbar-nav px-2 me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link mx-md-3 text-white" aria-current="page" href="./menu.html">Home</a>
+          </li>
+        </ul>
+        <form class="mb-3 mb-md-0" role="search">
+          <input class="form-control" type="search" placeholder="🔎 cerca qui..." aria-label="Search">
+        </form>
+        <button class="btn text-white ms-md-3 mb-3 mb-md-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle fs-5" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <!-- offcanvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+          <img src="./assets/icons8-blog-64.png" class="" alt="">
+        </h5>
+        <button type="button" class="btn-close text-white " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav px-2 me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link mx-md-3" aria-current="page" href="./menu.html">home</a>
+          </li>
+        </ul>
+        <form class="mb-3 mb-md-0" role="search">
+          <input class="form-control" type="search" placeholder="🔎 cerca qui..." aria-label="Search">
+        </form>
+        <button class="btn ms-md-3 mb-3 mb-md-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle text-black fs-5" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  <!-- modale -->
+  <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0">
+        <div class="modal-body shadow bg-white">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 text-center">
+                <p class="h3 text-blask font-dosis">Accedi</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label small">Email</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label small">Passworld</label>
+                  <input type="password" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label small" for="exampleCheck1">Ricorda la password</label>
+                </div>
+                <button type="submit" class="bg-black text-white d-block mx-auto border-0 py-2 px-4 rounded-2 font-dosis">Submit</button>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- prima sezione -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="testo_corsivo text-dark m-4 display-2 text-center">Brasciole al sugo</h1>
+      </div>
+      <div class="col-12 border pe-0 col-md-6">
+        <img src="./assets/involtini-sugo820x460.png" alt="patate riso e cozze" class="img-fluid ">
+    </div>
+    <div class="col-12  col-md-6">
+        <ul class="testo_dosis">
+            <p class="text-dark  testo_corsivo">Ingredienti:</p>
+            <li>
+                Riso arborio
+            </li>
+            <li>
+                Patate
+            </li>
+            <li>
+                Pomodoro ciliegino
+            </li>
+            <li>
+                Prezzemolo
+            </li>
+            <li>
+                Cozze
+            </li>
+            <li>
+                pecorino romano
+            </li>
+            <li>
+                aglio
+            </li>
+            <li>
+                cipolla bianca
+            </li>
+            <li>
+                olio evo
+            </li>
+        </ul>
+
+    </div>
+
+    </div>
+  </div>
+  <!-- seconda sezione -->
+  <ul class="testo_dosis">
+    <p class="text-dark  testo_corsivo">Procedimento:</p>
+    <li>
+        Ora occupatevi della pulizia delle cozze a crudo: rimuovete il bisso e strofinate il guscio con una paglietta, poi inserite la punta di un coltellino affilato fra le valve e fatela scorrere lungo il lato piatto della cozza. Partite dalla punta e proseguite fino ad arrivare all’altra estremità, poi raschiate sempre con la punta del coltello per staccare il mollusco da una delle valve. Scartate la metà vuota del guscio e mettete da parte la metà con il mollusco ancora attaccato. Fate questa operazione collocando sotto di voi una ciotola così da raccogliere l’acqua delle cozze, dopodiché filtratela e tenetela da parte
+    </li><br>
+    <li>
+        Siete pronti per assemblare la tiella: prendete una teglia del diametro di circa 28 cm (l’ideale è utilizzare un tegame di terracotta o di ceramica) e oliate il fondo, poi distribuite circa metà della cipolla e l’aglio. Disponete metà delle patate sulla base per formare il primo strato, poi aggiungete qualche pomodorino.
+    </li><br>
+    <li>
+        Spolverizzate con un po’ di Pecorino grattugiato e di prezzemolo, salate e pepate.Condite con un filo d’olio, dopodiché adagiate le cozze con la parte del guscio rivolta verso il basso per formare il secondo strato. Spolverizzate nuovamente con un po’ di Pecorino.Insaporite con altro prezzemolo, sale e pepe. A questo punto sciacquate bene il riso sotto l’acqua corrente, poi distribuitelo sulle cozze ricoprendole uniformemente 21.
+    </li><br>
+    <li>
+        Ricoprite il tutto con abbondante Pecorino, poi salate e pepate. In ultimo bagnate la teglia con l’acqua filtrata delle cozze, avendo cura di versarla lungo i bordi. Aggiungete in questo modo anche l’acqua, quanto basta per arrivare quasi al livello dell’ultimo strato di patate.
+    </li><br>
+    <li>
+        Cuocete in forno statico a 220° per circa 50 minuti. Se a fine cottura dovesse risultare poco dorata in superficie, accendete il grill per altri 5 minuti; le patate dovranno formare una bella crosticina, mentre l’interno dovrà risultare asciutto. Una volta sfornata, coprite la tiella con un canovaccio e lasciate riposare per permettere ai sapori di amalgamarsi al meglio. Servite riso, patate e cozze ancora tiepido!
+    </li><br>
+</ul>
+
+      <!-- bottone finale -->
+      <div>
+        <a class="text-decoration-none" href="./menu.html">
+          <button type="button" class="bg-black text-white d-block mx-auto border-0 py-2 px-4 mb-5 rounded-2 font-dosis">Ritorna alla home</button>
+        </a>
+      </div>
+
+        <!-- footer -->
+      <footer class="container d-flex justify-content-center text-center ">
+            <div class="row">
+            </div>
+            <div class="col">
+              <h3>Contatti</h3>
+              <p>Indirizzo: Corso Vittorio Emanuele, 12345 Bari</p>
+              <p>Telefono: +39 012 345 6789</p>
+              <p>Email: info@example.com</p>
+            </div>
+            <div class="col">
+              <h3>Mappa</h3>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95085.89737921503!2d16.847728992983403!3d41.11714382965638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1339643aaadb75df%3A0x78c9c5b6c4a7e60a!2sBari%2C%20Province%20of%20Bari%2C%20Italy!5e0!3m2!1sen!2sus!4v1645797260481!5m2!1sen!2sus width='100%' height='150'"></iframe>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/4aa9d1e789.js" crossorigin="anonymous"></script>
+</body>
+</html>

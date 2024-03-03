@@ -1,0 +1,68 @@
+body {
+    font-family: "bitter" , serif;
+}
+/* variabili css per i colori */
+:root {
+    --det-color:#AC8B6B;
+    --sec-color:#847361;
+    --acc-color:#41372B;
+}
+/* testo */
+.tx-1 {
+    color: var(--det-color);
+}
+
+.tx-2 {
+    color: var(--sec-color);
+}
+
+.tx-acc {
+    color: var(--acc-color);
+}
+/* bgc */
+
+.bg-1 {
+    background-color: var(--det-color);
+}
+
+.bg-2 {
+    background-color: var(--sec-color);
+}
+
+.bg-acc {
+    background-color: var(--acc-color);
+}
+/* border */
+.borde-1 {
+    border-bottom: 4px solid var(--det-color) !important;
+}
+
+.borde-2 {
+    border-bottom: 4px solid var(--sec-color) !important;
+}
+
+.borde-acc {
+    border-bottom: 4px solid var(--acc-color) !important;
+}
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+.destinazione-sticky {
+    position: sticky;
+    top: 150px;
+}
+.my_h5 {
+    position: absolute;
+    top: 10px;
+}
+.testo_dosis {
+    font-family: "dosis";
+}
+.testo_corsivo {
+    font-family: "Dancing Script", cursive;
+    color: #887154;
+    font-size: 25px;
+}
+.body_color {
+    background-color: antiquewhite;
+}
